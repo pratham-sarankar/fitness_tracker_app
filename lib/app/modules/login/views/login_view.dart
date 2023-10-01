@@ -75,6 +75,8 @@ class LoginView extends GetView<LoginController> {
                 const SizedBox(height: 25),
                 TextButton(
                   onPressed: () async {
+                    Get.toNamed(Routes.LOADING, arguments: "Logging in...");
+                    await Future.delayed(const Duration(seconds: 3));
                     Get.offAllNamed(Routes.HOME);
                   },
                   child: const Text("Login"),

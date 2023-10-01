@@ -1,16 +1,12 @@
 import 'package:get/get.dart';
 
-class HomeController extends GetxController {
-  late RxInt currentIndex;
+class TrackersController extends GetxController {
+  //TODO: Implement TrackersController
 
+  final count = 0.obs;
   @override
   void onInit() {
-    currentIndex = 0.obs;
     super.onInit();
-  }
-
-  changeIndex(int index) {
-    currentIndex.value = index;
   }
 
   @override
@@ -22,4 +18,6 @@ class HomeController extends GetxController {
   void onClose() {
     super.onClose();
   }
+
+  void increment() => count.value++;
 }

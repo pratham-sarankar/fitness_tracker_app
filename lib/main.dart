@@ -21,6 +21,11 @@ void main() {
       theme: ThemeData(
         useMaterial3: true,
         brightness: Brightness.light,
+        dividerTheme: DividerThemeData(
+          thickness: 1,
+          space: 0,
+          color: Colors.grey.shade300,
+        ),
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color(0xff01011f),
         ),
